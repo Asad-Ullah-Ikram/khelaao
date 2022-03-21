@@ -8,8 +8,8 @@ const App = () => {
   return (
     <NavigationContainer>
       <PaperProvider>
-        <MainStack />
-        {/* <AuthStack /> */}
+        {/* <MainStack /> */}
+        <AuthStack />
       </PaperProvider>
     </NavigationContainer>
   );
