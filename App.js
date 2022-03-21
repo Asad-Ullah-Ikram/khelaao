@@ -1,15 +1,16 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import MainStack from './src/navigation/MainStack';
-import AuthStack from './src/navigation/AuthStack';
+import Routes from './src/navigation/Routes';
 import {Provider as PaperProvider} from 'react-native-paper';
+import MainStack from './src/navigation/MainStack';
 
 const App = () => {
   return (
     <NavigationContainer>
       <PaperProvider>
         {/* <MainStack /> */}
-        <AuthStack />
+        {/* <AuthStack /> */}
+        <Routes />
       </PaperProvider>
     </NavigationContainer>
   );
