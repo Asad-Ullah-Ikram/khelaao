@@ -4,7 +4,7 @@ import MainStack from '../navigation/MainStack';
 import AuthStack from '../navigation/AuthStack';
 
 const Routes = () => {
-  return false ? <MainStack /> : <AuthStack />;
+  return true ? <MainStack /> : <AuthStack />;
 };
 
 export default Routes;

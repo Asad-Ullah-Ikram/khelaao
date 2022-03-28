@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, Image, ScrollView} from 'react-native';
 import React from 'react';
 import HomeTopCard from '../components/HomeTopCard';
+import GetTeamDataById from '../components/GetTeamDataById';
 
 const items = [
   {
@@ -63,6 +64,7 @@ const Home = () => {
           {/* { loop end here} */}
         </ScrollView>
       </View>
+      <GetTeamDataById />
     </View>
   );
 };
