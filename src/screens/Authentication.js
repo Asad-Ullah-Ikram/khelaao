@@ -19,7 +19,9 @@ export function Authentication({navigation}) {
 
   const onPressContinue = () => {
     if (phoneNumber) {
-      navigation.navigate('otp');
+      navigation.navigate('otp', {
+        phoneNumber: phoneNumber,
+      });
     }
   };
 

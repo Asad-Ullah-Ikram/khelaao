@@ -5,10 +5,36 @@ import {
   TextInput,
   StyleSheet,
   TouchableOpacity,
+  KeyboardAvoidingView,
 } from 'react-native';
-import KeyboardAvoidingView from 'react-native/Libraries/Components/Keyboard/KeyboardAvoidingView';
+import auth from '@react-native-firebase/auth';
 
-export function GetOTP({navigation}) {
+export function GetOTP({navigation, route}) {
+  const {phoneNumber} = route.params;
+  console.log(phoneNumber);
+  ///////////////////////////////////////////////////////
+  // If null, no SMS has been sent
+  const [confirm, setConfirm] = useState(null);
+
+  const [code, setCode] = useState('');
+
+  // Handle the button press
+  // async function signInWithPhoneNumber(phoneNumber) {
+  //   console.log('asad');
+  //   const confirmation = await auth().signInWithPhoneNumber(phoneNumber);
+  //   setConfirm(confirmation);
+  // }
+
+  async function confirmCode() {
+    try {
+      await confirm.confirm(code);
+    } catch (error) {
+      console.log('Invalid code.');
+    }
+  }
+
+  auth().signInWithPhoneNumber('+92 3450258360');
+  //////////////////////////////////////////////////////////
   let textInput = useRef(null);
 
   const lengthInput = 4;
@@ -27,7 +53,7 @@ export function GetOTP({navigation}) {
     return () => {
       clearInterval(clockCall);
     };
-  });
+  }, []);
 
   const decrementClock = () => {
     if (countdown === 0) {
@@ -44,7 +70,7 @@ export function GetOTP({navigation}) {
   const onChangeText = val => {
     setInternalVal(val);
     if (val.length === lengthInput) {
-      navigation.navigate('Verification');
+      // navigation.navigate('Verification');
     }
   };
 

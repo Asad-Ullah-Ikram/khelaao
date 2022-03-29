@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "1098123685783",
-    "project_id": "khelaao-b3781",
-    "storage_bucket": "khelaao-b3781.appspot.com"
+    "project_number": "462281478077",
+    "project_id": "khelaao-50e5c",
+    "storage_bucket": "khelaao-50e5c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1098123685783:android:3ee27da521a29825cc5ed2",
+        "mobilesdk_app_id": "1:462281478077:android:ff6f19ee63207463a7ccd4",
         "android_client_info": {
           "package_name": "com.khelaao"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1098123685783-tq9mnb1l8kebhnvejd7ldh7ogtp9tg1n.apps.googleusercontent.com",
+          "client_id": "462281478077-h2nlgq1lftqtbimbbq1l1om0n0ng7r4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khelaao",
+            "certificate_hash": "a5b97f80f5e66f296888cc6f10a389bf01080943"
+          }
+        },
+        {
+          "client_id": "462281478077-cmq25hk95uebacb5golshrcvptj78ej3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC1FQ0mqmtfhjlPhKyFGBX_oKOqMwAs5eE"
+          "current_key": "AIzaSyDo929JEnthCpSGyyYzGlUve-wX1SkvINM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1098123685783-tq9mnb1l8kebhnvejd7ldh7ogtp9tg1n.apps.googleusercontent.com",
+              "client_id": "462281478077-cmq25hk95uebacb5golshrcvptj78ej3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

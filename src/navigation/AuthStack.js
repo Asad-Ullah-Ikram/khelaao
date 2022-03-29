@@ -13,10 +13,10 @@ const screenOptions = {
 const AuthStack = () => {
   return (
     <Stack.Navigator screenOptions={screenOptions}>
-      {/* <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Signup" component={SignUp} /> */}
-      <Stack.Screen name="authentication" component={Authentication} />
-      <Stack.Screen name="otp" component={GetOTP} />
+      {/* {/* <Stack.Screen name="Login" component={Login} /> */}
+      <Stack.Screen name="Signup" component={SignUp} /> 
+      {/* <Stack.Screen name="authentication" component={Authentication} /> */}
+      {/* <Stack.Screen name="otp" component={GetOTP} /> */}
     </Stack.Navigator>
   );
 };

@@ -33,17 +33,16 @@ const items = [
 const Home = () => {
   return (
     <View style={{height: '100%'}}>
-      <View
+      {/* <View
         style={{
-          // marginTop: 5,
           backgroundColor: '#fff',
           paddingVertical: 15,
           paddingHorizontal: 10,
           backgroundColor: '#3BA7ED',
-        }}>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          {/* { loop starts here} */}
-          {items.map((item, index) => (
+        }}> */}
+      {/* <ScrollView horizontal showsHorizontalScrollIndicator={false}> */}
+      {/* { loop starts here} */}
+      {/* {items.map((item, index) => (
             <View
               key={index}
               style={{
@@ -59,11 +58,11 @@ const Home = () => {
                 runteam2={item.runteam2}
               />
             </View>
-          ))}
+          ))} */}
 
-          {/* { loop end here} */}
-        </ScrollView>
-      </View>
+      {/* { loop end here} */}
+      {/* </ScrollView>
+      </View> */}
       <GetTeamDataById />
     </View>
   );
